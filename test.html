@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button>Нажми меня</button>
+    <iframe id="iframe-bot" src="test2.html" width="500px" height="500px">
+
+    </iframe>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        // var iframeDocument = document.getElementsByTagName("iframe")[0];
+        // console.log(iframeDocument);
+        //
+        // var body = window.frames['iframe'].contentDocument.getElementById('iframe-bot');
+        //
+        // console.log(body);
+
+
+        // function iframeAccess() {
+        //     var iframe = document.getElementById("iframe-bot");
+        //     console.log(iframe.contentWindow.document);
+        //     //var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+        //     //console.log(innerDoc.body);
+        // }
+
+        var asd = $('#iframe-bot').contents().find('#close').click(function () {
+            console.log("asdasdasdasd");
+        });
+
+        console.log(asd);
+    </script>
+</body>
+</html>
